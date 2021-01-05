@@ -1,0 +1,4 @@
+diff a/routes/doctor_routes.js b/routes/doctor_routes.js	(rejected hunks)
+@@ -233 +233 @@ router.post("/toggleblock", npiController.toggleBlock);
+-router.get("/appointments/:id",npiController.getAppointment)
++router.get("/appointments/:id", npiController.getAppointment);
