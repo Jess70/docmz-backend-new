@@ -70,7 +70,9 @@ app.use(express.static("public"));
 
 // use JWT auth to secure the api
 app.use(jwt());
-
+app.use("/", (req, res, next) => {
+  res.status(200).json({message: "Hello from DocMZ-server"})
+});
 app.use("/questionnaire", require("./routes/questionnaire_route"));
 
 // NPI
